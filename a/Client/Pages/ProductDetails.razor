@@ -1,0 +1,50 @@
+﻿@page "/product/{id:int}"
+@inject IProductService ProductService
+
+<div class="container">
+    <div class="col-md-8 offset-md-2">
+        @if (ProductService.ServiceResponseProduct == null)
+        {
+            <span class="alert alert-danger">Loading</span>
+        }
+        else if (!ProductService.ServiceResponseProduct.Success)
+        {
+            <span class="alert alert-danger">@ProductService.ServiceResponseProduct.Message</span>
+        }
+        else
+        {
+            <div class="card">
+                <div class="card-header">
+                    @ProductService.ServiceResponseProduct.Data.Title
+                </div>
+                <img src="@ProductService.ServiceResponseProduct.Data.ImageUrl" class="card-img-top" alt="@ProductService.ServiceResponseProduct.Data.Title">
+                <div class="card-body">
+                    <h5 class="card-title">@ProductService.ServiceResponseProduct.Data.Title</h5>
+                    <p class="card-text">@ProductService.ServiceResponseProduct.Data.Description</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">@ProductService.ServiceResponseProduct.Data.Price</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">@ProductService.ServiceResponseProduct.Data.Title</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+@code {
+    //private Product? product = null;
+    //public ServiceResponse<Product> ServiceResponseProduct { get; set; }
+
+    [Parameter]
+    public int Id { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await ProductService.GetProductByIdAsync(Id);
+        //product = ProductService.Products.Find(p => p.Id == Id);
+    }
+}

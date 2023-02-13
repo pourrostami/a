@@ -1,0 +1,32 @@
+﻿@font-face {
+    font-family: 'B Ziba';
+    /*src: url('BZiba.eot');*/
+    src: url('./open-iconic/ast_fonts/BZiba.eot');
+    src: url('./open-iconic/ast_fonts/BZiba.eot?#iefix') format('embedded-opentype'), url('BZiba.woff2') format('woff2'), url('BZiba.woff') format('woff'), url('BZiba.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('./open-iconic/ast_fonts/Vazir.eot');
+    src: url('./open-iconic/ast_fonts/Vazir.eot?#iefix') format('embedded-opentype'), url('Vazir.woff2') format('woff2'), url('Vazir.woff') format('woff'), url('Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IranNastaliq';
+    src: url('./open-iconic/ast_fonts/IranNastaliq.eot');
+    src: url('./open-iconic/ast_fonts/IranNastaliq.eot?#iefix') format('embedded-opentype'), url('IranNastaliq.woff2') format('woff2'), url('IranNastaliq.woff') format('woff'), url('IranNastaliq.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+    font-family:Vazir !important ;
+}

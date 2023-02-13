@@ -1,0 +1,70 @@
+﻿@inject IProductService ProductService
+
+<section id="teams" class="pt-5 text-center bg-dark">
+
+    <div class="container">
+
+        <div class="row" style="margin-bottom: 100px;">
+
+            <div class="col">
+
+                <h2 class="text-white mb-3">کالاها</h2>
+                <p class="lead text-white">
+                    نیست وش باشد خیال اندر جهان . تو جهانی بر خیالی بین روان
+                </p>
+
+            </div>
+
+        </div>
+
+        @if (ProductService.Products == null || ProductService.Products.Count == 0)
+        {
+            <div class="row text-center">
+                <span class="alert alert-warning">
+                    Loading » » »
+                </span>
+            </div>
+        }
+
+        <div class="row g-2">
+            @foreach (Product product in ProductService.Products)
+            {
+                <div class="card" style="width: 18rem;">
+                    <img src="@product.ImageUrl" class="card-img-top" alt="@product.Title">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">@product.Description</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item fw-bold fs-4 text-warning">@product.Title</li>
+                        <li class="list-group-item">@product.Price</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="/product/@product.Id" class="btn btn-outline-success">« « «</a>
+                    </div>
+                </div>
+            }
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+@code {
+    //private List<Product> Products = new List<Product>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await ProductService.GetProductsAsync();
+    }
+
+}

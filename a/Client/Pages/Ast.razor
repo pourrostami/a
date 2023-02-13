@@ -1,0 +1,511 @@
+﻿@page "/ast"
+
+<PageTitle>Ast</PageTitle>
+
+<h1>Ast</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<div>
+
+
+    <section id="showcase" class="py-5">
+
+        <div class="primary-overlay text-white">
+
+            <div class="container">
+
+                <div id="showcase-height" class="row justify-content-center align-items-center">
+
+                    <div class="col-lg-6 text-center ">
+
+                        <h1>WEBPROG.ir</h1>
+                        <p class="lead">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                            در ستون و سطرآنچنان که لازم است
+                        </p>
+                        <a href="#" class="btn btn-primary bt-lg">
+                            نمایش <i class="fas fa-arrow-left"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="col-lg-6 text-center">
+                        <img width="500" height="500" src="./img/online_presentation.svg" alt=""
+                             class="img-fluid d-none d-lg-block m-auto" />
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="news" class="bg-dark text-white py-5">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4 mb-2">
+                    <input type="text" class="form-control form-control" placeholder="نام خود را وارد کنید" />
+                </div>
+
+                <div class="col-md-4 mb-2">
+                    <input type="text" class="form-control form-control" placeholder="ایمیل خود را وارد کنید" />
+                </div>
+
+                <div class="col-md-4 mb-2">
+                    <button class="btn btn-primary btn-block">
+                        ارسال <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="box" class="py-5">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-3 mb-2">
+
+                    <div class="card text-center border-primary">
+
+                        <div class="card-body">
+
+                            <h4 class="text-primary mb-3">لورم ایپسوم</h4>
+                            <p>
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از طراحان گرافیک است.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 mb-2">
+
+                    <div class="card text-center bg-primary text-white">
+
+                        <div class="card-body">
+
+                            <h4 class="text-white mb-3">لورم ایپسوم</h4>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از طراحان گرافیک است.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 mb-2">
+
+                    <div class="card text-center border-primary">
+
+                        <div class="card-body">
+
+                            <h4 class="text-primary mb-3">لورم ایپسوم</h4>
+                            <p>
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از طراحان گرافیک است.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 mb-2">
+
+                    <div class="card text-center bg-primary text-white">
+
+                        <div class="card-body">
+
+                            <h4 class="text-white mb-3">لورم ایپسوم</h4>
+                            <p>
+                                ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از طراحان گرافیک است.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="about" class="py-5 text-center bg-light">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h2 class="text-primary mb-3">لورم ایپسوم متن ساختگی</h2>
+                    <p class="lead">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="accordion mt-5" id="accordionExample">
+
+                    <div class="card">
+
+                        <div class="card-header" id="headingOne">
+
+                            <h2 class="mb-0">
+
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
+                                    لورم ایپسوم
+                                </button>
+
+                            </h2>
+
+                        </div>
+
+
+                        <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                            <div class="card-body">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                                مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                                کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                                آینده شناخت فراوان جامعه و متخصصان را می طلبد
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="card-header" id="headingTwo">
+
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                    لورم ایپسوم
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                                مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                                کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                                آینده شناخت فراوان جامعه و متخصصان را می طلبد
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                    لورم ایپسوم
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+                            <div class="card-body">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                                مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                                کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                                آینده شناخت فراوان جامعه و متخصصان را می طلبد
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section id="teams" class="pt-5 text-center bg-dark">
+
+        <div class="container">
+
+            <div class="row" style="margin-bottom: 100px;">
+
+                <div class="col">
+
+                    <h2 class="text-white mb-3">لورم ایپسوم متن ساختگی</h2>
+                    <p class="lead text-white">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <img width="150" height="150" class="img-fluid rounded-circle" src="./img/man.svg" alt="" />
+
+                            <h4 class="mt-3">لورم ایپسوم</h4>
+
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
+                            </p>
+
+                            <div class="d-flex justify-content-center">
+
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                                </div>
+
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                                </div>
+
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                                </div>
+
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-telegram fa-2x"></i></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <img width="150" height="150" class="img-fluid rounded-circle" src="./img/woman.svg" alt="" />
+
+                            <h4 class="mt-3">لورم ایپسوم</h4>
+
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                                </div>
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                                </div>
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                                </div>
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-telegram fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img width="150" height="150" class="img-fluid rounded-circle" src="./img/man-1.svg" alt="" />
+                            <h4 class="mt-3">لورم ایپسوم</h4>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                                </div>
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                                </div>
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                                </div>
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-telegram fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img width="150" height="150" class="img-fluid rounded-circle" src="./img/woman-1.svg" alt="" />
+                            <h4 class="mt-3">لورم ایپسوم</h4>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                                </div>
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                                </div>
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                                </div>
+                                <div class="p-2">
+                                    <a href="#"><i class="fab fa-telegram fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section id="contact" class="py-5 bg-light">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-9 mb-3">
+
+                    <h3> ارتباط با ما : </h3>
+
+                    <form action="#">
+                        <div class="input-group mb-3">
+
+                            <input type="text" class="form-control order-2" placeholder="نام خود را وارد کنید" />
+
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control order-2" placeholder="ایمیل خود را وارد کنید" />
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <textarea class="form-control order-2" placeholder="متن پیام خود را وارد کنید" rows="5"></textarea>
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="fas fa-comment-dots"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-block"> ارسال </button>
+
+                    </form>
+
+                </div>
+
+
+                <div class="col-lg-3 text-center">
+                    <img width="350" height="350" src="./img/video_call.svg" alt="" />
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <footer class="bg-primary py-4 text-white">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col text-center">
+                    <p>تمامی حقوق این اثر متعلق به وبسایت وبپروگ میباشد.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</div>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
